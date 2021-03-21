@@ -1,99 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="styles.css">
-    <script src="interactiveContent.js"></script>
-    <title>Document</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<script src="interactiveContent.js" defer></script>
+<title>About Me</title>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <a class="about" href="#aboutMe">Hafiz Ali</a>
 
-            <ul class="other">
-                <li><a href="#resumeLink">Resume</a></li>
-                <li><a href="#skillsLink">Skills</a></li>
-                <li><a href="#projectsLink">Projects</a></li>
-                <li><a href="#contactsLink">Contact</a></li>
-                <li><a href="#othersLink">Others</a></li>
-            </ul>
-        </div>
-    </header>
+<div class="header">
+    <div style="display: flex;">
+        <img src="images/Hafiz_Image_2.jpg" alt="Hafiz_Image_2.jpg">
+        <h1><a href="index.html">Hafiz Ali</a></h1>
+    </div>
+    <h3>An enthusiastic and dedicated full stack web developer.</h3>
+</div>
 
-    <h2 id="aboutMe">Introduction</h2>
-    
-    <div id="about">
-    
-        <img id="myPic" src="images/Pursuit 7.0 - Hafiz (Mohsin) Ali.jpg" alt="headShot">
+<div class="row">
+    <div class="col-1 menu">
+        <ul>
+            <li><a href="#resumeLink">Resume</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="col-2">
+        <h2 id="aboutMe">Introduction</h2>
+      
+        <div id="about">
+            <img id="myPic" src="images/Hafiz_Image_2.jpg" alt="headShot">
         
-        <div class="paraDiv">
-            <p>A a current fellow into the highly selective Pursuit developer cohort, I’ve been passionate about computers since I started making applications on my first desktop computer as a kid, which led to my developing web sites using JavaScript.
+            <div class="paraDiv">
+                <p>A a current fellow into the highly selective Pursuit developer cohort, I’ve been passionate about computers since I started making applications on my first desktop computer as a kid, which led to my developing web sites using JavaScript.
                 <br><br>
-                As an Uber driver in NYC the most rewarding part of my job has been the successful navigation in remote and far flung areas using the proprietary interface, and I am also a NYC Department of Consumer Affairs licensed and proficient contractor for home improvement.
+                As an Uber driver in NYC the most rewarding part of my job has been the successful navigation in remote and far flung areas using the proprietary interface, 
+                and I am also a NYC Department of 
+                <span id="dots">........</span>
+                <span id="more">Consumer Affairs licensed and proficient contractor for home improvement.
+                
                 <br><br>
                 I’d love to work at a company like Uber that specializes in providing ride sharing services, keeping people connected and providing on demand delivery services.
                 <br><br>
-                I listen actively, being highly respectful and showing friendly behavior. I am a person with high potency of tolerance and I hope to be supportive and encouraging with my friends and colleagues alike. Outside of coding I enjoy nice walks and time with family and friends. 
+                I listen actively, being highly respectful and showing friendly behavior. I am a person with high potency of tolerance and I hope to be supportive and encouraging with my friends and colleagues alike. Outside of coding I enjoy nice walks and time with family and friends.
+                </span>
+                <button id="myBtn" onclick="myFunction()">Read More</button>
+                </p>
+            </div>
+
+        </div>
+
+        <h2 id="resumeLink">Resume</h2>
+        <div id="resume">
+            <p>Click on Resume to view in a different tab. <br><br> <a href="https://docs.google.com/document/d/1Vv3tY3lEgB8l4l2PJ6GWLAV5cI9gEQTyG9rgkXinY-4/edit?usp=sharing" target="_blank">Resume</a>
             </p>
+            <img src="images/Ali Resume.jpg" alt="">
+            
         </div>
 
     </div>
-
-    <h2 id="resumeLink">Resume</h2>
-    <div id="resume">
-        <p style="color: #8a8a8a;">Click on Resume to view in a different tab. <br><br> <a href="https://docs.google.com/document/d/1Vv3tY3lEgB8l4l2PJ6GWLAV5cI9gEQTyG9rgkXinY-4/edit?usp=sharing" target="_blank">Resume</a>
-        </p>
-        <img src="images/Ali Resume.jpg" alt="">
-        
-    </div>
     
-    <h2 id="skillsLink">Skills</h2>
-    <div id="skills">
-        <div class="iconColumn">
-            <i class="fab fa-html5 fa-4x"></i>
-            <i class="fab fa-css3-alt fa-4x"></i>
-            <i class="fab fa-js-square fa-4x"></i>
-            <i class="fab fa-node fa-4x"></i>
-            <i class="fab fa-github fa-4x"></i>
-            <i class="fab fa-react color fa-4x"></i>
-        </div>
 
-        <div class="paraDiv">
-            <p>HTML5: </p><br>
-            <p>CSS3:</p><br>
-            <p>JavaScript:</p><br>
-            <p>Node:</p><br>
-            <p>Github:</p><br>
-            <p>React:</p>
+    <div class="col-3 right">
+        <div class="aside">
+            <h2>Reaction Tester Game</h2>
+            <p>Want to check how fast is your brain<br><br>
+            <a href="Javascript_Project-Reaction_Tester/Reaction_Tester.html" target="_blank">
+                <h5>Check Here</h5>
+            </a></p>
         </div>
     </div>
-    
-    <h2 id="projectsLink">Projects</h2>
-    
-    <div id="projects">
-        <ul>
-            <li>
-                <p class="projectPara">1. Command Line Interface Guessing Game </p>    
-                <img id="guessGame" src="images/Guessing Game CLI.gif" alt="">
-            </li>
-            <li>
-                <p class="projectPara">2. Command Line Interface Tic-Tac-Toe Game </p>
-                <img id="ticTacToe" src="images/Tic-TacToe.gif" alt="">
-            </li>
-            <li>
-                <p class="projectPara">3. Command Line Interface Snowman Game</p>
-                <img id="snowman" src="images/Snowman.gif" alt="">
-            </li>
-            <li>
-                <p class="projectPara">4. Clonned page of BBC News</p>
-                <img id="bbcClone" src="images/BBC_News_Clonned_Page.png" alt="">
-            </li>
-        </ul>
-    </div>
+
+
+</div>
+
+<div class="footer">
+    <p>&#169; Hafiz Mohsin Ali &#169;</p>
+</div>
 
 </body>
 </html>
