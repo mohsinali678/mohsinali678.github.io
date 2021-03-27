@@ -1,24 +1,28 @@
+#container{
+    width: 1000px;
+    min-height: 500px;
+    height: auto;
+    margin: 0px auto;
+    background-color: white;
+    border: 2px solid black;
+    overflow: hidden;
+}
+
 #shape{
-    width: 200px;
-    height: 200px;
     background-color: red;
     display: none;
+    border: 1px solid black;
+    padding: auto;
     position: relative;
 }
 
 body{
     font-family: sans-serif;
     background-color: #8a8a8a;
+    width: 100%;
+    height: 1000px;
 }
 
 .bold{
     font-weight: bold;
-}
-
-#container{
-    width: 1000px;
-    min-height: 400px;
-    margin: 0px auto;
-    background-color: white;
-    border: 1px solid black;
 }

@@ -18,8 +18,8 @@ let appearAfterDelay=()=>{
 
     shape.display = "block";
 
-    let top = Math.random()*400;
-    let left = Math.random()*400;
+    let top = Math.random()*200;
+    let left = Math.random()*700;
     shape.top = top+"px";
     shape.left = left+"px";
     
