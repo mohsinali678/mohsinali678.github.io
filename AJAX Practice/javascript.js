@@ -99,6 +99,10 @@
 
 // Lesson 6: AJAX
 
-$.get("info.txt", function(data){
+// $.get("info.txt", function(data){
+//     alert(data);
+// })
+
+$.ajax("info.txt").done((data)=>{
     alert(data);
-})
+});
