@@ -108,3 +108,9 @@ $.ajax("infoo.txt").done((data)=>{
 }).fail(()=>{
     alert("Could not get data.")
 });
+
+$.ajax("info.txt").done(function(data){
+    $("#text").innerHTML = data;
+}).fail(function(){
+    alert("Could not get data.");
+})
