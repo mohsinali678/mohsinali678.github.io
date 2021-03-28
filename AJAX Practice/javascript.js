@@ -81,23 +81,23 @@
 
 // Lesson 5: Animating Content
 
-$("#circle")
-.click(function (){
-    $(this)
-    .animate({
-        width:"400px",
-        height:"400px",
-        marginLeft:"100px",
-        marginTop:"100px"
-    }, 2000,    
-    function(){
-        $(this).css("background-color", "red");
-    })
+// $("#circle")
+// .click(function (){
+//     $(this)
+//     .animate({
+//         width:"400px",
+//         height:"400px",
+//         marginLeft:"100px",
+//         marginTop:"100px"
+//     }, 2000,    
+//     function(){
+//         $(this).css("background-color", "red");
+//     })
 
-})
+// })
 
 
-// Lesson 5: AJAX
+// Lesson 6: AJAX
 
 $.get("info.txt", function(data){
     alert(data);
