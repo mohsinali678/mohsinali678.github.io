@@ -110,7 +110,7 @@ $.ajax("infoo.txt").done((data)=>{
 });
 
 $.ajax("info.txt").done(function(data){
-    $("#text").innerHTML = data;
+    $("#text").html(data);
 }).fail(function(){
     alert("Could not get data.");
 })
