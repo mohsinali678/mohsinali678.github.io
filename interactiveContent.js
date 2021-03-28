@@ -1,7 +1,5 @@
 const projectCards = document.querySelectorAll("#projects div");
-console.log(projectCards)
 projectCards.forEach(projectCard => {
-    console.log(projectCard)
     projectCard.addEventListener("mouseover", (e) => {
         projectCard.classList.add('img-darken');
         projectCard.childNodes[3].classList.remove('link-brighten');
