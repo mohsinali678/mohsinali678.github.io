@@ -103,6 +103,8 @@
 //     alert(data);
 // })
 
-$.ajax("info.txt").done((data)=>{
+$.ajax("infoo.txt").done((data)=>{
     alert(data);
+}).fail(()=>{
+    alert("Could not get data.")
 });
