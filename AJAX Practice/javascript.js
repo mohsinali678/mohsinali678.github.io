@@ -68,15 +68,15 @@
 // })
 
 // Method 2
-let showingText = true;
+// let showingText = true;
 
-$("#toggle").click(() => {
-    if(showingText){
-        $("#text").fadeOut(()=>{showingText=false;})
-    }else{
-        $("#text").fadeIn(()=>{showingText=true;})
-    }
-})
+// $("#toggle").click(() => {
+//     if(showingText){
+//         $("#text").fadeOut(()=>{showingText=false;})
+//     }else{
+//         $("#text").fadeIn(()=>{showingText=true;})
+//     }
+// })
 
 
 // Lesson 5: Animating Content
@@ -99,6 +99,6 @@ $("#toggle").click(() => {
 
 // Lesson 5: AJAX
 
-
-
-
+$.get("info.txt", function(data){
+    alert(data);
+})
